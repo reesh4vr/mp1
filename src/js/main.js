@@ -103,3 +103,21 @@ window.addEventListener("click", (e) => {
     }
   });
 });
+
+const youtubeBtn = document.getElementById("openYoutube");
+const youtubeModal = document.getElementById("youtubeModal");
+
+youtubeBtn.addEventListener("click", () => {
+  youtubeModal.style.display = "flex";
+});
+
+const youtubeClose = youtubeModal.querySelector(".close");
+youtubeClose.addEventListener("click", () => {
+  youtubeModal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === youtubeModal) {
+    youtubeModal.style.display = "none";
+  }
+});

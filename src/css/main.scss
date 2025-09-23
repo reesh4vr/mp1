@@ -267,6 +267,19 @@ body.scrolled #navbar nav ul li a {
     margin-top: 20px;
 }
 
+.music-note {
+  margin-top: 20px;
+  font-size: 40px;
+  color: $dark;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+    color: $primary;
+  }
+}
+
 .modal {
     display: none;
     position: fixed;
